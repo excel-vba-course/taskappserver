@@ -1,0 +1,16 @@
+- model_class = Task
+div class="page-header"
+  h1=t '.title', :default => model_class.model_name.human.pluralize.titleize
+table class="table table-striped"
+  thead
+    tr
+      th Image
+      th Tags
+      th Description
+  tbody
+    - @tasks.each do |task|
+      tr
+        td= image_tag task.file.url(:medium)
+        td= task.tags
+        td= task.description
+        

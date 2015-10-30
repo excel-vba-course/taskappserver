@@ -1,9 +1,9 @@
 class Api::V1::TasksController < Api::V1::ApplicationController
 
-	before_action :set_deal_note, only: [:destroy]
+	# before_action :set_deal_note, only: [:destroy]
 
 	def create
-		Task.create(file: params[:file])
+		Task.create(file: params[:file], tags: params[:tags], description: params[:description])
 		render json: {
 			success: true
 		}

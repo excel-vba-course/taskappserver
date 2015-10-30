@@ -1,0 +1,28 @@
+= form_for @task, :html => { :class => "form-horizontal" } do |f|
+  .form-group
+    = f.label :file_file_name, :class => 'control-label'
+    .controls
+      = f.text_field :file_file_name, :class => 'form-control'
+  .form-group
+    = f.label :file_content_type, :class => 'control-label'
+    .controls
+      = f.text_field :file_content_type, :class => 'form-control'
+  .form-group
+    = f.label :file_file_size, :class => 'control-label'
+    .controls
+      = f.text_field :file_file_size, :class => 'form-control'
+  .form-group
+    = f.label :file_updated_at, :class => 'control-label'
+    .controls
+      = f.text_field :file_updated_at, :class => 'form-control'
+  .form-group
+    = f.label :tags, :class => 'control-label'
+    .controls
+      = f.text_field :tags, :class => 'form-control'
+  .form-group
+    = f.label :description, :class => 'control-label'
+    .controls
+      = f.text_field :description, :class => 'form-control'
+  = f.submit nil, :class => 'btn btn-primary'
+  '
+  = link_to t('.cancel', :default => t("helpers.links.cancel")), tasks_path, :class => 'btn'
