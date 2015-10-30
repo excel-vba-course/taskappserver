@@ -28,6 +28,7 @@ gem 'slim-rails'
 
 gem 'puma'
 gem 'rvm-capistrano'
+gem 'therubyracer', platforms: :ruby
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
