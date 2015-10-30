@@ -26,6 +26,12 @@ Rails.application.routes.draw do
   #     end
   #   end
 
+  namespace :api do
+    namespace :v1 do
+      resources :tasks
+    end
+  end
+
   # Example resource route with sub-resources:
   #   resources :products do
   #     resources :comments, :sales

@@ -19,3 +19,4 @@
 /solr/development/data/*
 /solr/default/data/*
 /solr/pids/*
+/public/system/*
